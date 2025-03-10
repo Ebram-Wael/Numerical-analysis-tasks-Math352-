@@ -1,6 +1,6 @@
 function [x,y] = EulerForward(f,xinit,xend,yinit,h)
 
- N = (xend-xinit)/h;
+ N = round((xend-xinit)/h);
 
  x = zeros(1, N+1);
  y = zeros(1, N+1);

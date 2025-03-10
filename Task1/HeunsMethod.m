@@ -1,6 +1,6 @@
 function [x,y] = HeunsMethod(f,xinit,xend,yinit,h)
 
- N = (xend-xinit)/h;
+ N = round((xend-xinit)/h);
 
  x = [xinit zeros(1, N)];
  y = [yinit zeros(1, N)];
